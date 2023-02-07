@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stewie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  </head>
+  <body>
+    <style type="text/css">
+      #slider {
+        overflow: hidden;
+      }
+      #slider figure {
+        position: relative;
+        width: 500;
+        margin: 0%;
+        left: 0;
+      }
+    </style> 
+    <div
+      class="container-fluid"
+      style="background-color: yellow; padding: 10px"
+    >
+      <img
+        class="img-logo"
+        style="float: left; width: 100px; height: 50px"
+        src="stewielogo.png"
+        alt="logo"
+      />
+      <h1 style="text-align: center">Stewie Griffin</h1>
+    </div>
+
+    <div class="container-fluid" style="background-color: grey; padding: 5px;">
+      <h3>Find everything about me <a href="/stewie/about.html">Here!</a></h3>
+      <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+
+    <div class="swiper-slide"> <img src="stewie5.jpg"></div>
+    <div class="swiper-slide"> <img src="stewie3.png"></div>
+    <div class="swiper-slide"> <img src="stewie2.jpeg"></div>   
+    
+ 
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+
+  <div class="swiper-button-next"></div>
+
+      </div>
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },  
+
+});
+      </script>
+      <div>
+        
+      </div>
+
+
+    
+  </body>
+</html>
